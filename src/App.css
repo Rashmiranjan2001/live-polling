@@ -1,0 +1,77 @@
+body {
+  font-family: 'Poppins', sans-serif; /* Updated font */
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 800px;
+  height: 300px;
+  padding: 40px 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 42px 48px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+  transition: box-shadow 0.3s ease;
+  font-weight: bold;
+}
+
+
+.container:hover {
+  box-shadow: 0 18px 24px rgba(0, 0, 0, 0.2); /* New box-shadow on hover */
+
+}
+
+
+.header {
+  margin-bottom: 30px;
+}
+
+.header h2 {
+  font-size: 32px; /* Increased font size */
+  margin-bottom: 15px;
+  color: #0c288c;
+  font-family: AvenirNext-Bold;
+}
+
+.header p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-container button {
+  display: inline-block;
+  width: 150px;
+  padding: 12px;
+  margin: 0 10px;
+  background-color: #0c288ce3;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #0056b3;
+}
+
+.button-container button:focus {
+  outline: none;
+}
+
+
+
+

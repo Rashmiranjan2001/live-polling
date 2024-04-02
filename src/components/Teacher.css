@@ -1,0 +1,364 @@
+.teacher-container {
+  margin: 20px;
+}
+
+.teacher-title {
+  font-size: 24px;
+  color: #333;
+}
+
+.question-section {
+  margin-top: 20px;
+}
+
+.question-textarea {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.option-section {
+  margin-top: 10px;
+}
+
+.option-input {
+  width: calc(100% - 50px);
+}
+
+.correct-option-label {
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.ask-question-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ask-question-button:hover {
+  background-color: #0056b3;
+}
+
+.question-instruction {
+  margin-top: 20px;
+}
+
+.poll-results-section {
+  margin-top: 20px;
+}
+
+.poll-results-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.poll-question {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.poll-result {
+  margin-top: 10px;
+}
+
+.no-poll-results {
+  margin-top: 20px;
+}
+.option-section {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.option-inputs {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.option-input {
+  width: calc(100% - 120px); /* Adjust width */
+}
+
+.correct-option-label {
+  margin-left: 10px;
+}
+
+.correct-option-checkbox {
+  margin-left: 5px;
+}
+
+.selected-option {
+  margin-left: 10px;
+}
+
+.selected-text {
+  color: green;
+}
+
+.unselected-text {
+  color: red;
+}
+
+.option-section {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.option-inputs {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.option-input {
+  width: calc(100% - 120px); /* Adjust width */
+}
+
+.selected-text {
+  color: green;
+}
+
+.correct-options-section {
+  margin-left: 10px;
+}
+
+.correct-option-label {
+  margin-left: 10px;
+}
+
+.correct-option-checkbox {
+  margin-left: 5px;
+}
+
+.option-section-one {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between; /* Align elements at the extremes */
+  align-items: center;
+}
+
+.all-options,
+.correct-option {
+  width: 90px; /* Set width for labels */
+  font-weight: bold;
+}
+
+.option-input {
+    width: calc(100% - 150px); /* Adjust width */
+    padding: 8px; /* Add padding */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 4px; /* Add border radius */
+  }
+  
+  .correct-option-label {
+    margin-left: 5px;
+    font-weight: bold;
+  }
+  
+  .ask-question-button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .ask-question-button:hover {
+    background-color: #0056b3;
+  }
+
+  .teacher-container {
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px;
+  }
+  
+  .teacher-title {
+    font-size: 24px;
+    color: #0c288c;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .question-section {
+    margin-top: 20px;
+  }
+  
+  .question-textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .option-section {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .option-inputs {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .option-input {
+    width: calc(100% - 120px); /* Adjust width */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .correct-option-radio {
+    margin-left: 70px;
+  }
+  
+  .correct-option-label {
+    margin-left: 5px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .ask-question-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ask-question-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .question-instruction {
+    margin-top: 20px;
+    color: #666;
+  }
+  
+  .poll-results-section {
+    margin-top: 20px;
+  }
+  
+  .poll-results-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .poll-question {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .poll-result {
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .no-poll-results {
+    margin-top: 20px;
+    color: #666;
+  }
+  
+/* Remove default styling for checkboxes */
+.option-section input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #ccc; /* Add border */
+    width: 16px; /* Set width */
+    height: 16px; /* Set height */
+    border-radius: 0; /* Remove border radius */
+  }
+  
+  /* Add custom checkbox style */
+  .option-section input[type="checkbox"]:checked {
+    background-color: #007bff; /* Change background color when checked */
+  }
+
+  .teacher-container {
+    margin: 20px;
+  }
+  
+  .current-poll-results-section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .poll-results-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .poll-question {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .poll-result-container {
+    margin-bottom: 10px;
+  }
+  
+  .poll-option {
+    margin-bottom: 5px;
+  }
+  
+  .poll-result-bar {
+    position: relative;
+    height: 35px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+  }
+  
+  .poll-result-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 4px;
+  }
+  
+  .poll-result-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    margin: 0;
+    font-size: 1.10em;
+    color: white;
+  }
+
+  .poll-result-percentage {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    margin: 0;
+    font-size: 1.10em;
+    color: white;
+  }
+  
+  
+  
+  
