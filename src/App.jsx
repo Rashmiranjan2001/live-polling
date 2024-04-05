@@ -9,7 +9,7 @@ function ChooseUserType({ onChoose }) {
     <div className="container">
       <div className="header">
         <h2>Welcome to the Live Polling System</h2>
-        <h5>Made By Rashmiranjan Rout</h5>
+        <h5>Made By Rashmiranjan</h5>
         <p>Choose User Type:</p>
       </div>
       <div className="button-container">
