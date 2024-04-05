@@ -16,6 +16,27 @@ function Teacher() {
   const [previousPollResults, setPreviousPollResults] = useState([]);
   const [isQuestionActive, setIsQuestionActive] = useState(false);
   const [allStudentsAnswered, setAllStudentsAnswered] = useState(false);
+  const [chatMessage, setChatMessage] = useState(""); // New state for chat message
+  const [chatHistory, setChatHistory] = useState([]);
+
+  useEffect(() => {
+    // Listen for chat messages from server
+    socket.on("chatMessage", (message) => {
+      setChatHistory((prevChatHistory) => [...prevChatHistory, message]);
+    });
+
+    return () => {
+      socket.off("chatMessage");
+    };
+  }, []);
+
+  const handleChatMessageSubmit = (e) => {
+    e.preventDefault();
+    if (chatMessage.trim() !== "") {
+      socket.emit("chatMessage", { sender: "Teacher", message: chatMessage });
+      setChatMessage("");
+    }
+  };
 
   useEffect(() => {
     socket.on("pollResults", (results) => {
@@ -105,6 +126,8 @@ function Teacher() {
 
   return (
     <>
+  <div className="chat-container">
+    <div className="main-content">
       <div className="teacher-container">
         <h2 className="teacher-title">Teacher Panel</h2>
         {!isQuestionActive || allStudentsAnswered ? (
@@ -230,6 +253,47 @@ function Teacher() {
             ))}
           </div>
         )}
+      </div>
+      </div>
+      <div className="chat-section">
+          <div>
+            <h1 className="chat-header"> Live Chat</h1>
+            <div className="chat-history-container">
+            <div className="chat-history">
+              {chatHistory.map((chat, index) => (
+                <div
+                  key={index}
+                  className={
+                    chat.sender === "Teacher" ? "chat-right" : "chat-left"
+                  }
+                >
+                  {chat.sender === "Teacher" ? (
+                    <strong> You </strong>
+                  ) : (
+                    <strong>{chat.sender} </strong>
+                  )}
+
+                  <div className="chat-message">{chat.message}</div>
+                </div>
+              ))}
+            </div>
+            </div>
+            <div className="chat-form">
+              <form onSubmit={handleChatMessageSubmit}>
+                <input
+                  type="text"
+                  value={chatMessage}
+                  onChange={(e) => setChatMessage(e.target.value)}
+                  placeholder="Type your message..."
+                  className="place-one"
+                />
+                <button className="chat-submit-button" type="submit">
+                  Send
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

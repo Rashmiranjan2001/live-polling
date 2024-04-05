@@ -149,6 +149,7 @@
 .correct-option {
   width: 90px; /* Set width for labels */
   font-weight: bold;
+  color: #0c288c;
 }
 
 .option-input {
@@ -359,6 +360,80 @@
     color: white;
   }
   
+  .chat-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 350px;
+  }
+
+  .chat-section {
+    position: fixed;
+    top: 50%;
+    right: 80px;
+    width: 400px;
+    transform: translateY(-50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chat-right {
+    text-align: right;
+    margin: 10px;
+  }
+  
+  .chat-left {
+    text-align: left;
+    margin: 10px;
+  }
+
+  .chat-message {
+    word-wrap: break-word;
+  }
+
+  .chat-submit-button {
+    margin-top: 10px;
+    padding: 4px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 30px;
+  }
+
+  .place-one {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 3px;
+    width: 70%; 
+  }
+
+  .chat-header {
+    font-weight: bold;
+    color: #0c288c;
+    margin-bottom: 10px;
+  }
+
+  .container {
+    height: calc(100vh - 80px); /* Adjust this value as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .main-content {
+    overflow-y: auto; /* Enable vertical scrolling for main content */
+    padding-bottom: 100px; /* Space for the fixed chat box */
+  }
+
+  .chat-history-container {
+    height: 500px; /* Adjust as needed */
+    overflow-y: auto;
+  }
   
   
   
